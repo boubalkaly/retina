@@ -1,0 +1,25 @@
+{% extends 'ocr/base.html' %}
+
+
+
+
+{% block navbar %}
+{% endblock navbar %}
+{% block title %}
+Create an account
+{% endblock title %}
+
+{% block content %}
+<div class="flex justify-cente p-6">
+    <h1 class="m-auto">Create an account</h1>
+</div>
+
+<form method="post" class="flex flex-col items-center justify-center p-12">
+    <div class="">
+    {% csrf_token %}{{form}}
+    <p>Have an account? <a href="/login">Sign in.</a></p>
+    <button type="submit" class="text-white bg-orange-600 hover:bg-orange-700 hover:no-underline font-bold py-2 px-4 rounded-xl no-underline">Register</button>
+    </div>  
+</form>
+
+{% endblock content %}

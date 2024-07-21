@@ -1,0 +1,12 @@
+{% extends 'ocr/base.html' %}
+{% load static tailwind_tags %}
+{% block title%}
+<h1>You can upload your files right here</h1>
+{% endblock title%}
+
+{% block content%}
+    <form method="post" enctype="multipart/form-data" class="flex flex-col items-center">
+        {% csrf_token %}{{form}}
+        <button type="submit" class="text-white bg-orange-600 hover:bg-orange-700 hover:no-underline font-bold py-2 px-4 rounded-xl no-underline">Upload File</button>
+    </form>
+{% endblock content%}

@@ -1,0 +1,27 @@
+{% extends 'ocr/base.html' %}
+{% load static tailwind_tags %}
+
+
+
+{% block title %}
+Retina: Free College Readings Software for Dyslexics
+{% endblock title %}
+
+{% block content %}
+<div class="pt-40 md:pt-52 flex flex-col items-center justify-center">
+
+    <h1 class="text-black text-5xl text-center font-bold p-2 hyphens-auto">Reach your academic potential</h1>
+    <div class="px-4 pb-4 flex flex-col items-center text-center">
+        <p class="text-black text-center">College readings come in long and hard-to-read formats. Some accept the frustration.</p>
+        <p class="text-black text-center">Others use <span class="text-orange-600 hover:underline">Retina</span> to read better and faster.</p>
+    </div>
+    
+    <a href="/signup" class="text-white bg-orange-600 hover:bg-orange-700 hover:no-underline font-bold py-2 px-4 rounded-xl no-underline">Get Started</a>
+
+</div>
+
+
+
+
+
+{% endblock content %}
